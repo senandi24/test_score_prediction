@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Score Predictor – Cardiff Metropolitan University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0a2540 0%, #001529 100%);
+            color: #e0f0ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Top Navigation Bar */
+        nav {
+            background: rgba(10, 37, 64, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+        }
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+        nav .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #00d4ff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+        nav a {
+            color: #c0d4ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero-content {
+            max-width: 900px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.2rem;
+            line-height: 1.1;
+        }
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: #a0c0ff;
+            margin-bottom: 2.5rem;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero img {
+            max-width: 100%;
+            border-radius: 16px;
+            margin: 2.5rem 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .predict-btn {
+            display: inline-block;
+            padding: 1.1rem 3rem;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(90deg, #00d4ff, #0095ff);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.35);
+        }
+        .predict-btn:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 212, 255, 0.5);
+            background: linear-gradient(90deg, #00eaff, #00aaff);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: #8899aa;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">SCORESENSE</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Predict Your Exam Performance with AI Precision</h1>
+            <p class="subtitle">
+                Discover how your study habits, sleep quality, attendance, and other factors influence your upcoming exam score.
+            </p>
+
+            <!-- Professional motivational image -->
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Focused student working on laptop in modern university environment">
+
+            <a href="/predict" class="predict-btn">Predict My Score →</a>
+        </div>
+    </section>
+
+    <footer>
+        © Cardiff Metropolitan University • School of Technologies • Computational Intelligence 
+    </footer>
+
+</body>
+</html>
